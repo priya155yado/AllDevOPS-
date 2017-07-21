@@ -42,7 +42,6 @@ class ssh:
                     # Print as string with utf8 encoding
                     if str(alldata)is not None:
                         print 'command executed successfully'
-
         else:
             print("Connection not opened.")
 
