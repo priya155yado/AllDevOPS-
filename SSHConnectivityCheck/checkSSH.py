@@ -5,6 +5,7 @@ Used client library
 after connection method sendCommand is used to send the command using ssh.
 servers.csv is input file having info like serverIP,serverUserName,serverPassword
 This code handles ssh connection using password and it automatically adds server in know-hosts file.
+Code handles many execution of commands on remote server 
 
 '''
 class ssh:
