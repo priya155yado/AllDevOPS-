@@ -6,6 +6,7 @@ Dockerfile (CentOS 6) to install the following in a Docker continer:
 Python 2.7
 MongoDB - any version
 Apache tomcat 7 - running on port 8080
+
 for running dockerfile :  docker run -itd -P imagename
 
 Test Case 2:
