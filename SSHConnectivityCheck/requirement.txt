@@ -1,0 +1,6 @@
+Pre-requiste Needed
+packages: paramiko
+python version : 2.7
+Attached a demo .csv file.
+In taht use serverIP, serverUserName,keyName
+Assuming ssh connection are validated between servers.
