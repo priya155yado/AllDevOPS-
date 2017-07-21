@@ -1,0 +1,50 @@
+Solution for Test Case 3
+
+Following are the AWS services used for the architecture to be stable and have high availability.
+
+1.	Route53: For end user point of contact would be route53 any request will go through route53.
+Amazon’s Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and 
+businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like abc.com 
+and we have different routing policy.
+
+2.	VPC (Virtual Private Cloud): Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the Amazon
+Web Services (AWS) cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your
+virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables 
+and network gateways.
+
+3.	CloudFront: Let’s suppose we are observing high request for a particular feature of our application (get requests) and that request
+has same content for that time. The best way is to handle it by caching mechanism. Then we use CloudFront which will accelerates delivery
+of our websites, APIs and other web assets. So it will provide us high volume edge content caching.
+
+
+4.	ELB (Elastic Load Balancing): As we want to make our application highly available to handle requests we need to have ELB. Not only it
+will server the purpose of high availability but also the purpose of scalability. And we can set rules for making it secure and roboust. 
+So if demand exceeds we scale up our application and if demands lower downs we scale down our application by using autoscale feature.
+
+5.	EC2: For application to be up we need EC2 i.e. computing resource. So our apache web server and apache tomcat server will host on 
+compute resource and Ec2 reduces the time required to obtain and boot new server instances in minutes. It allows us to quickly scale 
+the capacity as per the requirement.Depending upon requirements we can opt for reserved instances to lower the cost.
+
+6.	Amazon S3: Amazon S3 has a simple web services interface that you can use to store and retrieve any amount of data, at any time, 
+from anywhere on the web. It gives any developer access to the same highly scalable, reliable, fast, inexpensive data storage 
+infrastructure that Amazon.S3 will help us to store all static and dynamic content required for application and even it makes 
+easy to access data efficiently.
+
+7.	EBS (Elastic Block Storage): Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with 
+Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect 
+you from component failure, offering high availability and durability. Amazon EBS volumes offer the consistent and low-latency 
+performance needed to run your workloads.
+
+8.	RDS (Relational database service): .For our application we will use RDS for Oracle database. And database must be launched in 
+Multi-AZ for disaster recovery. Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a 
+relational database in the cloud. It provides cost-efficient and resizable capacity while managing time-consuming database 
+administration tasks, freeing you up to focus on your applications and business.
+
+9.	IAM (Identity and access management): AWS Identity and Access Management (IAM) enables you to securely control access to
+AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups, and use permissions to 
+allow and deny their access to AWS resources.
+
+And additional services yet important for monitoring and auiditing.
+
+10.	We can use SQS to make the application decouple.
+11.	For notification purpose we can use SNS and CloudWatch, in order to monitor and provide us proper notification.
